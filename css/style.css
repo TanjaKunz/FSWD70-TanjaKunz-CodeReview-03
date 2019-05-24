@@ -35,9 +35,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 100%;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0; }
 
 footer {
   position: relative;
@@ -45,7 +45,7 @@ footer {
   flex-direction: column;
   width: 100%;
   height: auto;
-  margin-top: 50px;
+  margin-top: 10px;
   background-color: #000000; }
 
 /* ------- Header ------- */
@@ -80,13 +80,65 @@ footer {
     padding-right: 1em;
     list-style: none; }
   #nav a {
-    font-size: 120%;
+    font-size: 110%;
     color: white; }
   #nav a:hover {
-    font-weight: bold;
-    letter-spacing: 1px; }
+    font-weight: bold; }
 
 /* ------------ Main ------------ */
+main #pic {
+  background-color: #CECECE; }
+main #text {
+  padding: 2em;
+  background-color: #CECECE;
+  text-align: center; }
+  main #text h1, main #text p {
+    margin: 0; }
+main #headline {
+  top: 20px;
+  position: absolute;
+  margin: 0 auto;
+  width: 75%;
+  color: white; }
+main #form {
+  top: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 70%;
+  border: 1.5px solid #818181;
+  border-radius: 4px;
+  background-color: white;
+  opacity: 0.85; }
+  main #form h1 {
+    width: 100%;
+    text-align: center; }
+  main #form form {
+    width: 45%;
+    margin: 10px 0; }
+    main #form form input {
+      border: 0.5px solid #B6B6B6;
+      border-radius: 2px; }
+  main #form div {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  main #form #btn input {
+    margin-top: 10px;
+    border: 1px solid #339235;
+    border-radius: 4px;
+    padding: 1px 1em;
+    background-color: #339235;
+    opacity: 1;
+    font-size: 110%;
+    color: white; }
+  main #form #hide p {
+    font-size: 110%;
+    color: #339235; }
+
 /* ----------- Footer ----------- */
 footer ul {
   display: flex;
@@ -101,8 +153,7 @@ footer a {
   font-size: 100%;
   color: white; }
 footer a:hover {
-  font-weight: bold;
-  letter-spacing: 1px; }
+  font-weight: bold; }
 footer #logoFoot {
   display: flex;
   margin-right: 20px; }
@@ -114,38 +165,6 @@ footer p {
 
 /* ---------- Media Queries ---------- */
 @media screen and (min-width: 801px) {
-  main #date {
-    margin: 15px 0 0 0;
-    text-align: right;
-    width: 100%;
-    font-size: 80%;
-    font-style: italic;
-    color: #4B4B4B; }
-  main #newsWrap {
-    display-direction: row;
-    justify-content: space-between; }
-  main #news {
-    display-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 80%; }
-  main .blogs1 {
-    width: 30%; }
-  main .hidden {
-    display: none; }
-  main #banner3 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 20px auto; }
-  main .blogs2 {
-    width: 45%; }
-  main aside {
-    display-direction: column;
-    margin-top: 20px; }
-    main aside div {
-      height: 50%; }
-
   #logoFoot {
     justify-content: flex-end;
     margin-right: 20px; } }

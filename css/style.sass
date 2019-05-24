@@ -39,9 +39,9 @@ main
 	display: flex
 	flex-direction: column
 	align-items: center
-	width: 90%
+	width: 100%
 	height: 100%
-	margin: 0 auto
+	margin: 0
 
 footer
 	position: relative
@@ -49,7 +49,7 @@ footer
 	flex-direction: column
 	width: 100%
 	height: auto
-	margin-top: 50px
+	margin-top: 10px
 	background-color: #000000
 
 
@@ -93,15 +93,83 @@ footer
 		list-style: none
 
 	a
-		font-size: 120%
+		font-size: 110%
 		color: white
 
 	a:hover
 		font-weight: bold
-		letter-spacing: 1px
+		
 
 
 /* ------------ Main ------------ */
+main
+	#pic
+		background-color: #CECECE
+
+	#text
+		padding: 2em
+		background-color: #CECECE
+		text-align: center
+
+		h1, p
+			margin: 0
+
+	#headline
+		top: 20px
+		position: absolute
+		margin: 0 auto
+		width: 75%
+		color: white
+
+	#form
+		top: 50px
+		position: absolute
+		display: flex
+		justify-content: center
+		flex-direction: row
+		flex-wrap: wrap
+		margin: 0 auto
+		width: 70%
+		border: 1.5px solid #818181
+		border-radius: 4px
+		background-color: white
+		opacity: 0.85
+
+		h1
+			width: 100%
+			text-align: center
+
+		form
+			width: 45%
+			margin: 10px 0
+
+			input
+				border: 0.5px solid #B6B6B6
+				border-radius: 2px
+
+		div
+			display: flex
+			justify-content: center
+			width: 100%
+
+		#btn
+			input
+				margin-top: 10px
+				border: 1px solid #339235
+				border-radius: 4px
+				padding: 1px 1em
+				background-color: #339235
+				opacity: 1
+				font-size: 110%
+				color: white
+
+		#hide
+			p
+				font-size: 110%
+				color: #339235
+
+
+
 
 
 
@@ -127,7 +195,7 @@ footer
 
 	a:hover
 		font-weight: bold
-		letter-spacing: 1px
+		
 
 	#logoFoot
 		display: flex
@@ -144,45 +212,11 @@ footer
 
 @media screen and (min-width: 801px)
 	main
-		#date
-			margin: 15px 0 0 0
-			text-align: right
-			width: 100%
-			font-size: 80%
-			font-style: italic
-			color: #4B4B4B
+		
 
-		#newsWrap
-			display-direction: row
-			justify-content: space-between
+		
 
-		#news
-			display-direction: row
-			justify-content: space-between
-			flex-wrap: wrap
-			width: 80%
-
-		.blogs1
-			width: 30%
-
-		.hidden
-			display: none
-
-		#banner3
-			display: flex
-			justify-content: center
-			width: 100%
-			margin: 20px auto
-
-		.blogs2
-			width: 45%
-
-		aside			
-			display-direction: column			
-			margin-top: 20px
-
-			div
-				height: 50%	
+			
 
 	#logoFoot
 		justify-content: flex-end
