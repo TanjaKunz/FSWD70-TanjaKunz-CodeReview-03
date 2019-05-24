@@ -1,0 +1,218 @@
+/* ---- General Styles ---- */
+
+body
+	width: 95%
+	height: 100%
+	margin: 0 auto
+	padding: 0
+	font-family: "Arial-Narrow", sans-serif
+
+img
+	max-width: 100%
+	
+
+a
+	text-decoration: none
+
+
+/* ---- Page Structure ---- */
+
+#wrap
+	position: relative
+	width: 100%
+	height: 100%
+	margin: 0 auto
+	background-color: #FFFFFF
+
+header
+	position: relative
+	width: 100%
+	height: 100px
+
+nav
+	position: relative
+	width: 100%
+	height: 40px
+
+main
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 90%
+	height: 100%
+	margin: 0 auto
+
+footer
+	position: relative
+	display: flex
+	flex-direction: column
+	width: 100%
+	height: auto
+	margin-top: 50px
+	background-color: #000000
+
+
+/* ------- Header ------- */
+#header
+	display: flex
+	flex-direction: row
+	justify-content: space-between	
+	align-items: center
+	width: 100%
+	height: 100%	
+	background-color: #FFF3F3
+
+	div
+		height: auto
+		padding: 0 20px
+		
+
+	img
+		max-width: 100%
+		
+
+/* ------- Navigation Bar ------- */
+
+#nav
+	display: flex	
+	align-items: center
+	width: 100%
+	height: 100%	
+	background-color: #8E1616	
+
+	ul
+		display: flex
+		flex-direction: row
+		align-items: center
+		margin: 0
+		padding: 0 20px
+
+	li			
+		padding-right: 1em
+		list-style: none
+
+	a
+		font-size: 120%
+		color: white
+
+	a:hover
+		font-weight: bold
+		letter-spacing: 1px
+
+
+/* ------------ Main ------------ */
+
+
+
+
+
+
+/* ----------- Footer ----------- */				
+footer
+	ul
+		display: flex
+		flex-direction: row
+		align-items: center
+		margin: 10px 0
+		padding: 0 20px
+
+	li			
+		padding-right: 1em
+		list-style: none
+
+	a
+		font-size: 100%
+		color: white
+
+	a:hover
+		font-weight: bold
+		letter-spacing: 1px
+
+	#logoFoot
+		display: flex
+		margin-right: 20px
+
+	p
+		margin: 10px 0 
+		text-align: center
+		font-size: 80%
+		color: white
+
+
+/* ---------- Media Queries ---------- */
+
+@media screen and (min-width: 801px)
+	main
+		#date
+			margin: 15px 0 0 0
+			text-align: right
+			width: 100%
+			font-size: 80%
+			font-style: italic
+			color: #4B4B4B
+
+		#newsWrap
+			display-direction: row
+			justify-content: space-between
+
+		#news
+			display-direction: row
+			justify-content: space-between
+			flex-wrap: wrap
+			width: 80%
+
+		.blogs1
+			width: 30%
+
+		.hidden
+			display: none
+
+		#banner3
+			display: flex
+			justify-content: center
+			width: 100%
+			margin: 20px auto
+
+		.blogs2
+			width: 45%
+
+		aside			
+			display-direction: column			
+			margin-top: 20px
+
+			div
+				height: 50%	
+
+	#logoFoot
+		justify-content: flex-end
+		margin-right: 20px	
+	
+
+
+
+@media screen and (min-width: 481px) and (max-width: 800px)
+				
+			
+	#logoFoot
+		justify-content: flex-end
+		margin-right: 20px
+
+
+
+
+@media screen and (max-width: 480px)
+	
+
+	#nav, #navFoot
+		justify-content: center
+
+	
+
+	footer
+		ul
+			justify-content: center
+
+		#logoFoot
+			justify-content: center
+			margin: 0
