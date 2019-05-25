@@ -6,8 +6,7 @@
 
 	.member
 		width: 90%
-		display: flex
-		justify-content: space-between
+		display: flex		
 		margin: 30px
 		
 
@@ -25,7 +24,7 @@
 			margin: 10px
 			border: 0.5px solid #818181
 			border-radius: 3px
-			width: 80%
+			
 
 			.bold
 				width: 20%
@@ -35,6 +34,20 @@
 			.text
 				width: 70%
 
+@media screen and (min-width: 831px)
+	.member		
+		justify-content: space-between
+		margin: 30px
+
+		.data
+			width: 80%
 
 
 
+@media screen and (max-width: 570px)
+	.member
+		justify-content: center
+		flex-wrap: wrap
+
+		.data
+			width: 95%

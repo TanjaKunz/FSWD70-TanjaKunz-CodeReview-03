@@ -6,7 +6,6 @@
   #main .member {
     width: 90%;
     display: flex;
-    justify-content: space-between;
     margin: 30px; }
     #main .member .img {
       display: flex;
@@ -19,13 +18,25 @@
       align-items: center;
       margin: 10px;
       border: 0.5px solid #818181;
-      border-radius: 3px;
-      width: 80%; }
+      border-radius: 3px; }
       #main .member .data .bold {
         width: 20%;
         margin-left: 10px;
         font-weight: bold; }
       #main .member .data .text {
         width: 70%; }
+
+@media screen and (min-width: 831px) {
+  .member {
+    justify-content: space-between;
+    margin: 30px; }
+    .member .data {
+      width: 80%; } }
+@media screen and (max-width: 570px) {
+  .member {
+    justify-content: center;
+    flex-wrap: wrap; }
+    .member .data {
+      width: 95%; } }
 
 /*# sourceMappingURL=team.css.map */
