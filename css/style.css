@@ -88,15 +88,22 @@ footer {
 /* ------------ Main ------------ */
 main #pic {
   background-color: #CECECE; }
+main #main {
+  display: flex;
+  flex-direction: column; }
 main #headline {
-  top: 20px;
+  top: 30px;
   position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
   margin: 0 auto;
-  width: 75%;
+  width: 70%;
   color: white; }
 main #form {
-  top: 50px;
+  top: 60px;
   position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -111,7 +118,6 @@ main #form {
     width: 100%;
     text-align: center; }
   main #form form {
-    width: 45%;
     margin: 10px 0; }
     main #form form input {
       border: 0.5px solid #B6B6B6;
@@ -196,6 +202,9 @@ footer p {
 
 /* ---------- Media Queries ---------- */
 @media screen and (min-width: 831px) {
+  #form form {
+    width: 45%; }
+
   .bundle {
     width: 45%; }
     .bundle h2 {
@@ -207,6 +216,9 @@ footer p {
     justify-content: flex-end;
     margin-right: 20px; } }
 @media screen and (min-width: 571px) and (max-width: 830px) {
+  #form form {
+    width: 45%; }
+
   .bundle {
     width: 45%; }
     .bundle h2 {
@@ -220,6 +232,9 @@ footer p {
 @media screen and (max-width: 570px) {
   #nav, #navFoot {
     justify-content: center; }
+
+  #form form {
+    width: 90%; }
 
   .bundle {
     width: 90%; }
