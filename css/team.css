@@ -1,0 +1,31 @@
+#main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%; }
+  #main .member {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px; }
+    #main .member .img {
+      display: flex;
+      justify-content: center;
+      width: 90px; }
+    #main .member .data {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px;
+      border: 0.5px solid #818181;
+      border-radius: 3px;
+      width: 80%; }
+      #main .member .data .bold {
+        width: 20%;
+        margin-left: 10px;
+        font-weight: bold; }
+      #main .member .data .text {
+        width: 70%; }
+
+/*# sourceMappingURL=team.css.map */
