@@ -136,6 +136,7 @@ main #form {
     font-size: 110%;
     color: white; }
   main #form #hide p {
+    text-align: center;
     font-size: 110%;
     color: #339235; }
 
