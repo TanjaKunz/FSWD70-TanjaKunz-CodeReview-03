@@ -21,7 +21,7 @@ function getInfo() {
 				insurance = (this.HP *  120) / this.age + 100;
 			};
 
-			return "Dear " + this.name + ", insurance for a car with a HP of " + this.HP + " is <br><b>" + insurance.toFixed(2) + "</b>"
+			return this.name + ", your insurance costs <br><b>" + insurance.toFixed(2) + " €</b>"
 		}
 	}
 
